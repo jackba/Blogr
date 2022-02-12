@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
 
 :root{
 /* 
@@ -45,7 +47,7 @@ Background gradient - Intro/CTA mobile nav: */
   /*
     3. Allow percentage-based heights in the application
   */
-  html, body {
+  html,body {
     height: 100%;
   }
   /*
@@ -110,11 +112,13 @@ Background gradient - Intro/CTA mobile nav: */
 .topnav {
     overflow: hidden;
   
-    font-family: Arial;
+    font-family: 'Overpass', sans-serif;
+/* font-family: 'Ubuntu', sans-serif; */
   }
 
   /* Links inside the navbar */
   .topnav  a {
+    font-family: 'Overpass', sans-serif;
     float: left;
     font-size: 16px;
     color: white;
@@ -140,6 +144,8 @@ Background gradient - Intro/CTA mobile nav: */
     margin: 0; /* Important for vertical align on mobile phones */
   }
 
+  
+
   /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color:none;
@@ -157,6 +163,8 @@ Background gradient - Intro/CTA mobile nav: */
 
   /* Links inside the dropdown */
 .dropdown-content a {
+  font-family: 'Overpass', sans-serif;
+      font-size: 16px;
     float: none;
     color: black;
     padding: 12px 16px;
@@ -176,17 +184,20 @@ Background gradient - Intro/CTA mobile nav: */
   }
 
    .cta h1{
+    font-family: 'Overpass', sans-serif;
+      font-size: 40px;
        margin-top: 50px;
      margin-left: 30%;
      margin-right: 30%;
      color: var(--white-text);
-     font-weight: 800;
+     font-weight: 600;
   }
 
   .cta p{
     margin-top: 50px;
-   
-  margin-left: 30%;
+    font-family: 'Overpass', sans-serif;
+      font-size: 16px;
+  margin-left: 35%;
   margin-right: 30%;
   color: var(--white-text);
   font-weight: 300;
@@ -195,9 +206,10 @@ Background gradient - Intro/CTA mobile nav: */
 
 .learn {
    
-
-    margin-left: 30%;
-    margin-right: 30%;
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+    margin-left: 37%;
+    /* margin-right: 30%; */
     margin-top: 50px;
     
    
@@ -245,7 +257,8 @@ Background gradient - Intro/CTA mobile nav: */
       margin-left: 30%;
       margin-right: 30%;
       margin-top: 150px;
-
+      font-family: 'Overpass', sans-serif;
+      font-size: 40px;
   }
 
   .mid{
@@ -260,11 +273,15 @@ Background gradient - Intro/CTA mobile nav: */
 }
 .content h2{
     color: var(--headings);
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
  
 }
 .content p{
+  font-family: 'Overpass', sans-serif;
     color: var(--vdgb);
     margin-top: 20px;
+    font-size: 16px;
  
 }
   .image{
@@ -283,14 +300,17 @@ margin-top: -60px;
       margin-top: 50px;
   }
 
-  .phones h2{
-   
+  .phones h1{
+    font-family: 'Overpass', sans-serif;
+      font-size: 30px;
+      margin-bottom: 20px;
     color: var(--white-text);
 }
 
 .phones p{
-   
+  font-family: 'Overpass', sans-serif;
     color: var(--white-text);
+    font-size: 16px;
 }
 .phone-image{
     width: 500px;
@@ -298,38 +318,52 @@ margin-top: -60px;
     margin-top: -55px;
 }
 .phone-content{
-    width: 500px;
-    margin-top: 150px;
+    width: 520px;
+    margin-top: 100px;
+    
+    padding-left: 70px;
 }
 
+.phone-content h2{
+  
+  margin-bottom: 20px;
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+  
+}
 .laptop{
     display: flex;
     margin-top: 100px;
 }
+.laptop-image {
+  width: 500px;
+  
 
+}
 .laptop-content {
     width: 500px;
     
  
 }
-.laptop-content {
-    width: 500px;
- 
-}
+
 .laptop-content h2{
     color: var(--headings);
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
     
  
 }
 .laptop-content p{
+  font-family: 'Overpass', sans-serif;
     color: var(--vdgb);
     margin-top: 20px;
+    margin-bottom: 20px;
  
 }
 
-.footer{
+.footer-content{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: var(--footer-bg);
     border-radius: 0px 60px 0px 0px;
     width: 1440px;
@@ -338,7 +372,9 @@ margin-top: -60px;
 }
 
 .footer h3{
+  font-family: 'Overpass', sans-serif;
     color: var(--white-text);
+    font-size: 16px;
 }
 
 
@@ -352,4 +388,20 @@ margin-top: -60px;
     text-decoration: none;
     color: var(--white-text);
     margin: 5px;
+  }
+  .footer-logo, .footer-product, .footer-company, .footer-connect{
+    margin-top: 50px;
+  }
+
+  .footer-content ul {
+    margin-top: 50px;
+  }
+  .footer-content ul li {
+    margin-bottom: 10px;
+  }
+
+  .attribution{
+    background-color: var(--footer-bg);
+    color: var(--white-text);
+    padding-left: 40%;
   }
