@@ -1,0 +1,355 @@
+
+:root{
+/* 
+## Colors */
+/* ### Primary */
+
+--CTA-text: hsl(356, 100%, 66%);
+--CTA-HoverBG: hsl(355, 100%, 74%);
+--headings: hsl(208, 49%, 24%);
+
+/* ### Neutral */
+--white-text:hsl(0, 0%, 100%);
+--footer-text:hsl(240, 2%, 79%);
+--grayish-body: hsl(207, 13%, 34%);
+--footer-bg: hsl(240, 10%, 16%);
+
+/* ### Gradient */
+/* 
+Background gradient - Intro/CTA mobile nav: */
+
+--vlr:hsl(13, 100%, 72%);
+--lr: hsl(353, 100%, 62%);
+
+
+/* Background gradient - body: */
+--vdgb: hsl(237, 17%, 21%);
+--vddbhsl:hsl(237, 23%, 32%);
+
+}
+
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  .main-container{
+    width:  1440px;
+  }
+.hero{
+    background-image: url("./images/bg-pattern-intro-desktop.svg");
+    height: 400px; /* You must set a specified height */
+ /* width:  960px;  */
+ margin: 0 auto;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  border-bottom-left-radius: 60px;
+  
+    background-color: var(--vlr);
+}
+
+.navbar{
+    display: flex;
+ justify-content: space-between;
+ padding-top: 2rem;
+ margin-left: 4rem;
+ margin-right: 4rem;
+}
+/* Navbar container */
+.topnav {
+    overflow: hidden;
+  
+    font-family: Arial;
+  }
+
+  /* Links inside the navbar */
+  .topnav  a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  /* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  /* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  /* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:none;
+  }
+
+  /* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  /* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: var(--CTA-HoverBG);
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+   .cta h1{
+       margin-top: 50px;
+     margin-left: 30%;
+     margin-right: 30%;
+     color: var(--white-text);
+     font-weight: 800;
+  }
+
+  .cta p{
+    margin-top: 50px;
+   
+  margin-left: 30%;
+  margin-right: 30%;
+  color: var(--white-text);
+  font-weight: 300;
+}
+
+
+.learn {
+   
+
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 50px;
+    
+   
+  }
+
+  .learn .btn{
+   
+    background-color: var(--lr);
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+   
+    text-align: center;
+    border-radius: 60px;
+    
+   
+  }
+
+  .learn .btn:hover {
+    background-color: var(--white-text);
+    color: var(--lr);
+  }
+
+
+  .membership  .btn{
+   
+ 
+    padding: 15px 25px;
+    text-decoration: none;
+   
+    text-align: center;
+    border-radius: 60px;
+    
+   
+  }
+  .membership .btn:hover {
+    background-color: var(--lr);
+    color: var(--white-text);
+  
+  }
+
+
+  .design h1{
+      color: var(--headings);
+      margin-left: 30%;
+      margin-right: 30%;
+      margin-top: 150px;
+
+  }
+
+  .mid{
+
+    width:  1440px;
+    display: flex;
+  }
+.content{
+    width: 700px;
+    margin-top: 140px;
+    padding-left: 100px;
+}
+.content h2{
+    color: var(--headings);
+ 
+}
+.content p{
+    color: var(--vdgb);
+    margin-top: 20px;
+ 
+}
+  .image{
+width: 700px;
+margin-top: -60px;
+
+
+  }
+
+  .phones{
+      display: flex;
+      background-color: var(--vddbhsl);
+      border-radius: 0px 60px 0px 60px;
+      width: 1440px;
+      height: 380px;
+      margin-top: 50px;
+  }
+
+  .phones h2{
+   
+    color: var(--white-text);
+}
+
+.phones p{
+   
+    color: var(--white-text);
+}
+.phone-image{
+    width: 500px;
+    margin-left: 100px;
+    margin-top: -55px;
+}
+.phone-content{
+    width: 500px;
+    margin-top: 150px;
+}
+
+.laptop{
+    display: flex;
+    margin-top: 100px;
+}
+
+.laptop-content {
+    width: 500px;
+    
+ 
+}
+.laptop-content {
+    width: 500px;
+ 
+}
+.laptop-content h2{
+    color: var(--headings);
+    
+ 
+}
+.laptop-content p{
+    color: var(--vdgb);
+    margin-top: 20px;
+ 
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--footer-bg);
+    border-radius: 0px 60px 0px 0px;
+    width: 1440px;
+    height: 380px;
+    margin-top: 50px;
+}
+
+.footer h3{
+    color: var(--white-text);
+}
+
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+ .footer ul li a{
+    text-decoration: none;
+    color: var(--white-text);
+    margin: 5px;
+  }
