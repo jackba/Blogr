@@ -86,11 +86,12 @@ Background gradient - Intro/CTA mobile nav: */
   }
 
   .main-container{
-    width:  1440px;
+    max-width: 1400px;
   }
 .hero{
     background-image: url("./images/bg-pattern-intro-desktop.svg");
-    height: 400px; /* You must set a specified height */
+    opacity: 0.7;
+    height: 500px; /* You must set a specified height */
  /* width:  960px;  */
  margin: 0 auto;
   background-position: center; /* Center the image */
@@ -104,6 +105,7 @@ Background gradient - Intro/CTA mobile nav: */
 .navbar{
     display: flex;
  justify-content: space-between;
+
  padding-top: 2rem;
  margin-left: 4rem;
  margin-right: 4rem;
@@ -120,7 +122,7 @@ Background gradient - Intro/CTA mobile nav: */
   .topnav  a {
     font-family: 'Overpass', sans-serif;
     float: left;
-    font-size: 16px;
+    font-size: 1rem;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -134,7 +136,7 @@ Background gradient - Intro/CTA mobile nav: */
 
   /* Dropdown button */
 .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: 1rem;
     border: none;
     outline: none;
     color: white;
@@ -164,7 +166,7 @@ Background gradient - Intro/CTA mobile nav: */
   /* Links inside the dropdown */
 .dropdown-content a {
   font-family: 'Overpass', sans-serif;
-      font-size: 16px;
+      font-size: 1rem;
     float: none;
     color: black;
     padding: 12px 16px;
@@ -181,33 +183,42 @@ Background gradient - Intro/CTA mobile nav: */
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
+
   }
+/*   
+  .cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
 
    .cta h1{
     font-family: 'Overpass', sans-serif;
-      font-size: 40px;
+      font-size: 2rem;
        margin-top: 50px;
      margin-left: 30%;
      margin-right: 30%;
      color: var(--white-text);
      font-weight: 600;
+     text-align: center;
   }
 
   .cta p{
-    margin-top: 50px;
-    font-family: 'Overpass', sans-serif;
-      font-size: 16px;
+  margin-top: 50px;
+  font-family: 'Overpass', sans-serif;
+ font-size: 1rem;
   margin-left: 35%;
   margin-right: 30%;
   color: var(--white-text);
   font-weight: 300;
+  text-align: center;
 }
 
 
 .learn {
    
   font-family: 'Overpass', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
     margin-left: 37%;
     /* margin-right: 30%; */
     margin-top: 50px;
@@ -216,7 +227,7 @@ Background gradient - Intro/CTA mobile nav: */
   }
 
   .learn .btn{
-   
+    border: 2px solid var(--white-text);
     background-color: var(--lr);
     color: white;
     padding: 15px 25px;
@@ -224,6 +235,7 @@ Background gradient - Intro/CTA mobile nav: */
    
     text-align: center;
     border-radius: 60px;
+   
     
    
   }
@@ -235,19 +247,20 @@ Background gradient - Intro/CTA mobile nav: */
 
 
   .membership  .btn{
-   
+    background-color: var(--lr);
  
     padding: 15px 25px;
     text-decoration: none;
    
     text-align: center;
     border-radius: 60px;
+    margin-right: 50px;
     
    
   }
   .membership .btn:hover {
-    background-color: var(--lr);
-    color: var(--white-text);
+    background-color: var(--white-text);
+    color: var(--lr);
   
   }
 
@@ -258,30 +271,33 @@ Background gradient - Intro/CTA mobile nav: */
       margin-right: 30%;
       margin-top: 150px;
       font-family: 'Overpass', sans-serif;
-      font-size: 40px;
+      font-size: 2.5rem;
   }
 
   .mid{
 
-    width:  1440px;
+    max-width:  1400px;
     display: flex;
+    
+
   }
 .content{
     width: 700px;
     margin-top: 140px;
     padding-left: 100px;
+    padding-right: 100px;
 }
 .content h2{
     color: var(--headings);
     font-family: 'Overpass', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
  
 }
 .content p{
   font-family: 'Overpass', sans-serif;
     color: var(--vdgb);
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 1rem;
  
 }
   .image{
@@ -293,16 +309,18 @@ margin-top: -60px;
 
   .phones{
       display: flex;
+    
+
       background-color: var(--vddbhsl);
       border-radius: 0px 60px 0px 60px;
-      width: 1440px;
-      height: 380px;
+      max-width: 1400px;
+      height: 430px;
       margin-top: 50px;
   }
 
   .phones h1{
     font-family: 'Overpass', sans-serif;
-      font-size: 30px;
+      font-size: 1.875rem;
       margin-bottom: 20px;
     color: var(--white-text);
 }
@@ -310,10 +328,10 @@ margin-top: -60px;
 .phones p{
   font-family: 'Overpass', sans-serif;
     color: var(--white-text);
-    font-size: 16px;
+    font-size: 1rem;
 }
 .phone-image{
-    width: 500px;
+    width: auto;
     margin-left: 100px;
     margin-top: -55px;
 }
@@ -328,11 +346,13 @@ margin-top: -60px;
   
   margin-bottom: 20px;
   font-family: 'Overpass', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   
 }
 .laptop{
     display: flex;
+    
+
     margin-top: 100px;
 }
 .laptop-image {
@@ -349,7 +369,7 @@ margin-top: -60px;
 .laptop-content h2{
     color: var(--headings);
     font-family: 'Overpass', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     
  
 }
@@ -358,6 +378,8 @@ margin-top: -60px;
     color: var(--vdgb);
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 1rem;
+    margin-right: 20px;
  
 }
 
@@ -366,7 +388,7 @@ margin-top: -60px;
     justify-content: space-evenly;
     background-color: var(--footer-bg);
     border-radius: 0px 60px 0px 0px;
-    width: 1440px;
+    max-width:1400px;
     height: 380px;
     margin-top: 50px;
 }
@@ -374,7 +396,7 @@ margin-top: -60px;
 .footer h3{
   font-family: 'Overpass', sans-serif;
     color: var(--white-text);
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 
@@ -405,3 +427,287 @@ margin-top: -60px;
     color: var(--white-text);
     padding-left: 40%;
   }
+
+  .Humberga{
+    display: none;
+  }
+  /* *********************************************** */
+  /******************** Media Queries *************** */
+  /* *********************************************** */
+
+  /* @media screen and (min-width:1024px) {
+
+    
+    
+    .design h1{
+    
+      font-size: 1.5rem;
+  }
+
+  
+  
+  
+  } */
+
+  @media screen and (min-width:768px) and (max-width:1023px) {
+
+    
+.navbar{
+  
+margin-left: 2rem;
+
+}
+
+     .design h1{
+    
+      font-size: 1.5rem;
+  }
+
+  
+    
+    .mid{
+
+      
+      display:flex;
+      flex-direction: column-reverse;
+    }
+
+    .image {
+      width: 400px;
+    
+     
+      margin-left: 70px;
+      padding-top: 80px;
+  }
+  .phones{
+    display: flex;
+  
+}
+
+
+.phones h1{
+  
+    font-size: 1.875rem;
+  
+  
+}
+
+.phones p{
+
+  font-size: 1rem;
+}
+.phone-image{
+  max-width: 650px;
+  
+}
+.phone-content{
+  
+  margin-top: 10px;
+  padding-left: 70px;
+  margin-bottom: 50px;
+}
+
+.phone-content h2{
+
+
+font-size: 1rem;
+
+}
+  
+  
+  }
+
+  @media screen and (min-width:375px) and (max-width:767px) {
+
+    
+
+    .topnav {
+     display: none;
+    } 
+
+     .Humberga{
+     display: block;
+    } 
+
+    /* ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      
+          } */
+
+    .topnav ul li {
+      display: block;
+    }
+    .cta{
+      margin-top: 100px;
+    }
+    .cta h1{
+      
+        font-size: 1.5rem;
+        
+       
+        margin-top: 80px;
+        margin-right: 80px;
+        margin-bottom: 20px;
+        margin-left: 80px;
+    }
+  
+    .cta p{
+     
+    margin-left: 80px;
+    margin-right: 40px;
+    
+  }
+  
+  
+  .learn {
+     
+  
+      margin-left: auto;
+     padding-left: 250px;
+      
+     
+    }
+    /* .learn .btn{
+   
+      background-color: var(--lr);
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+     
+      text-align: center;
+      border-radius: 60px;
+      
+     
+    }
+  
+    .learn .btn:hover {
+      background-color: var(--white-text);
+      color: var(--lr);
+    } */
+  
+
+    .design h1{
+      text-align: center;
+     margin: 0;
+      margin-top: 150px;
+     
+  }
+  .image{
+width: 500px;
+margin: 0;
+padding: 0;
+
+  }
+  
+    .mid{
+
+      
+    
+      flex-direction: column-reverse;
+    }
+    .content{
+      width: auto;
+      margin-top: 30px;
+      margin-right: 30px;
+      margin-bottom: 200px;
+      margin-left: 30px;
+    padding: 0;
+      padding: 0;
+      text-align: center;
+  }
+  .content h2{
+      
+    font-weight: 700;
+      font-size: 1.7rem;
+
+   
+  }
+  .content p{
+   
+     margin-bottom: 20px;
+   
+  }
+
+
+
+    .phones{
+     
+     flex-direction: column;
+     height: auto;
+  }
+   .phones h1{
+  
+    text-align: center;
+  
+  
+}
+
+.phones p{
+
+  text-align: center;
+} 
+.phone-image{
+  max-width: 650px;
+  margin-left: auto;
+  margin-top: -170px;
+  
+}
+.phone-content{
+  
+ width: auto;
+ margin-right: 20px;
+}
+
+
+
+  .laptop{
+    flex-direction: column;
+}
+
+
+
+.laptop-image {
+width: auto;
+
+
+}
+.laptop-content {
+  width: auto;
+  
+
+}
+
+ .laptop-content h2{
+   font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+
+}
+.laptop-content p{
+text-align: center;
+
+} 
+
+  .footer-content{
+    flex-direction: column;
+    height: auto;
+    /* padding-top: 100px; */
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+}
+.footer h3{
+  
+  font-size: 1.5rem;
+}
+
+}
+
+
+  
